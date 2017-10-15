@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="is.ru.StringCalculator.CalculatorTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2017-10-15T19:52:37" hostname="DESKTOP-R71FK2B" time="0.003">
+<testsuite name="is.ru.StringCalculator.CalculatorTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2017-10-15T20:55:29" hostname="DESKTOP-R71FK2B" time="0.004">
   <properties/>
-  <testcase name="testNegatives" classname="is.ru.StringCalculator.CalculatorTest" time="0.001"/>
+  <testcase name="testNegatives" classname="is.ru.StringCalculator.CalculatorTest" time="0.002"/>
   <testcase name="testMultipleNumbers" classname="is.ru.StringCalculator.CalculatorTest" time="0.0"/>
   <testcase name="testIgnore1000" classname="is.ru.StringCalculator.CalculatorTest" time="0.0"/>
-  <testcase name="testEmptyString" classname="is.ru.StringCalculator.CalculatorTest" time="0.0"/>
+  <testcase name="testDelimiter" classname="is.ru.StringCalculator.CalculatorTest" time="0.0"/>
+  <testcase name="testEmptyString" classname="is.ru.StringCalculator.CalculatorTest" time="0.001"/>
   <testcase name="testNewLine" classname="is.ru.StringCalculator.CalculatorTest" time="0.0"/>
   <testcase name="testTwoNumbers" classname="is.ru.StringCalculator.CalculatorTest" time="0.0"/>
   <testcase name="testOneNumber" classname="is.ru.StringCalculator.CalculatorTest" time="0.0"/>
