@@ -35,4 +35,8 @@ public class CalculatorTest {
 					assertEquals(expectedOutcome, exception.getMessage());
     	}
     }
+    @Test
+    public void testIgnore1000() {
+   		assertEquals(6, Calculator.add("1,1001,2,3,2000"));
+   	}
 }

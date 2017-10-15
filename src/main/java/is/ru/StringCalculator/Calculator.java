@@ -36,6 +36,10 @@ public class Calculator{
 		     {
 		       negatives.add(num);
 		     }
+         else if(num > 1000)
+		     {
+		    	 continue;
+		     }
 		     sum += num;
 	   }
 	   if(negatives.size() > 0)
