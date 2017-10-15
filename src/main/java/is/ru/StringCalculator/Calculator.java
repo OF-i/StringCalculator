@@ -1,4 +1,5 @@
 package is.ru.StringCalculator;
+import java.util.ArrayList;
 
 public class Calculator{
 
@@ -25,12 +26,22 @@ public class Calculator{
  }
 
  private static int sum(String[] arguments)
- {
-   int sum = 0;
-   for(String i : arguments)
-   {
-     sum += parse(i);
-   }
-   return sum;
- }
+	 {
+	   int sum = 0;
+	   ArrayList<Integer> negatives = new ArrayList<Integer>();
+	   for(String i : arguments)
+	   {
+		   	int num = parse(i);
+		     if(num < 0)
+		     {
+		       negatives.add(num);
+		     }
+		     sum += num;
+	   }
+	   if(negatives.size() > 0)
+	   {
+		   throw new IllegalArgumentException("Negatives not allowed: " + negatives);
+	   }
+	   return sum;
+	 }
 }
