@@ -13,11 +13,8 @@ public class Calculator{
       if(numbers.contains(","))
       {
         String[] arguments = numbers.split(",");
-        if(arguments.length > 2)
-        {
-        	throw new IllegalArgumentException("The function only takes 0, 1 or 2 numbers");
-        }
-        return parse(arguments[0]) + parse(arguments[1]);
+        int sum = sum(arguments);
+        return sum;
       }
       return parse(numbers);
     }
@@ -25,5 +22,15 @@ public class Calculator{
   private static int parse(String num)
   {
 	  return Integer.parseInt(num);
+  }
+
+  private static int sum(String[] arguments)
+  {
+    int sum = 0;
+    for(String i : arguments)
+    {
+      sum += parse(i);
+    }
+    return sum;
   }
 }
